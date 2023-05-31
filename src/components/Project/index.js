@@ -9,6 +9,7 @@ function ProjectComponent(props) {
       </div>
       <div className="content">
         <p className="card-title">{props.name}</p>
+        <p className="card-text">{props.text}</p>
         <p class="proj-icons-container">
           <a href={props.github}>
             <img
