@@ -1,9 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
 
 function Nav() {
-  function showNavigation() {
     return (
       <ul className="flex-row">
         <li className="mx-1">
@@ -20,20 +18,6 @@ function Nav() {
         </li>
       </ul>
     );
-  }
-
-  return (
-    <header className="flex-row px-1">
-      <h1>
-        <Link to="/">
-        <FontAwesomeIcon icon="fa-solid fa-bug-slash" />
-          Cheptegei David
-        </Link>
-      </h1>
-
-      <nav>{showNavigation()}</nav>
-    </header>
-  );
 }
 
 export default Nav;
